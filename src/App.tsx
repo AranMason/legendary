@@ -20,6 +20,10 @@ const App: React.FC = () => {
 			</section>
 
 		</div>
+		<footer className="App-footer">
+			Created by Aran Mason.
+			<div>This site uses <a href="https://fontawesome.com/license">Font Awesome Icons</a></div>
+		</footer>
 		</Router>
 	);
 }
