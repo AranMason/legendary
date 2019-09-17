@@ -1,0 +1,33 @@
+.CardPoints {
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	border-color: #FAA613;
+}
+
+.CardPoints:first-child {
+	border-width: 2px 0px 2px 0px;
+}
+
+/* .CardPoints:nth-child(even) {
+	background-color: #FFBF69;
+	border-radius: 1em;
+} */
+
+.CardPoints
+
+.CardPoints-name {
+	flex: 1;
+	display: flex;
+}
+
+.CardPoints-points {
+	display: flex;
+}
+
+.CardPoints-expand {
+	display: flex;
+	margin-left: 5px;
+}

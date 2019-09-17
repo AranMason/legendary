@@ -1,3 +1,22 @@
 .PointsList{
-	text-align: left;
+	flex-direction: row;
+	display: flex;
+}
+
+.PointsList > div {
+	padding: 5px;
+}
+
+.PointsList-list {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.PointsList-content {
+	flex: 1;
+	display: flex;
+	margin-left: 1em;
+	flex-direction: column;
+
 }
