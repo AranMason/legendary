@@ -1,0 +1,120 @@
+{
+  "cards": [
+    {
+      "name": "Birthing Pod",
+      "points": 2
+    },
+    {
+      "name": "Carpet of Flowers",
+      "points": 1
+    },
+    {
+      "name": "Crop Rotation",
+      "points": 1
+    },
+    {
+      "name": "Cyclonic Rift",
+      "points": 3
+    },
+    {
+      "name": "Demonic Tutor",
+      "points": 4
+    },
+    {
+      "name": "Dig Throught Time",
+      "points": 1
+    },
+    {
+      "name": "Enlightened Tutor",
+      "points": 1
+    },
+    {
+      "name": "Flash",
+      "points": 6
+    },
+    {
+      "name": "Imperial Seal",
+      "points": 1
+    },
+    {
+      "name": "Intuition",
+      "points": 1
+    },
+    {
+      "name": "Mana Crypt",
+      "points": 4
+    },
+    {
+      "name": "Mana Drain",
+      "points": 1
+    },
+    {
+      "name": "Mana Vault",
+      "points": 1
+    },
+    {
+      "name": "Merchant Scroll",
+      "points": 1
+    },
+    {
+      "name": "Mystic Remora",
+      "points": 1
+    },
+    {
+      "name": "Mystical Tutor",
+      "points": 2
+    },
+    {
+      "name": "Natural Order",
+      "points": 4
+    },
+    {
+      "name": "Protean Hulk",
+      "points": 3
+    },
+    {
+      "name": "Rhystic Study",
+      "points": 1
+    },
+    {
+      "name": "Sol Ring",
+      "points": 4
+    },
+    {
+      "name": "Spellseeker",
+      "points": 1
+    },
+    {
+      "name": "Stoneforge Mystic",
+      "points": 1
+    },
+    {
+      "name": "Strip Mine",
+      "points": 2
+    },
+    {
+      "name": "Summoner's Pact",
+      "points": 2
+    },
+    {
+      "name": "Survival of the Fittest",
+      "points": 2
+    },
+    {
+      "name": "Thrasios, Triton Hero",
+      "points": 3
+    },
+    {
+      "name": "Transmute Artifact",
+      "points": 1
+    },
+    {
+      "name": "Treasure Cruise",
+      "points": 1
+    },
+    {
+      "name": "Vampiric Tutor",
+      "points": 2
+    }
+  ]
+}
