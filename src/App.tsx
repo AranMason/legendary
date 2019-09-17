@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+
+import PointsListPage from './pages/PointsList';
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -19,6 +23,10 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+
+	  <Router>
+		<Route path="/points" exact component={PointsListPage}/>
+	  </Router>
     </div>
   );
 }
