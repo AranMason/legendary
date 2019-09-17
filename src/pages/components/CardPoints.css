@@ -7,17 +7,6 @@
 	border-color: #FAA613;
 }
 
-.CardPoints:first-child {
-	border-width: 2px 0px 2px 0px;
-}
-
-/* .CardPoints:nth-child(even) {
-	background-color: #FFBF69;
-	border-radius: 1em;
-} */
-
-.CardPoints
-
 .CardPoints-name {
 	flex: 1;
 	display: flex;
