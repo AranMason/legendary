@@ -1,17 +1,18 @@
 import React from 'react';
 
-import PointList from '../data/points_list.json';
+import PointList from '../data/points.json';
+import './PointsList.css';
 
 class PointsListPage extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="PointsList">
 				Point List
 				<ul>
 					{
-						Object.keys(PointList).map((card_name, i) => {
+						PointList.cards.map(card => {
 							return <li>
-								{`${card_name}` }
+								{`${card.name} \t ${card.points}` }
 							</li>
 						})
 					}
