@@ -67,7 +67,7 @@ class PointsListPage extends React.Component<Props> {
 						</p>
 						<p>
 							Using the Candian Highlander points list as a basis for the points list, and removing cards already Banned in EDH creates the initial points list.
-							All cards that are banned in EDH have been removed from the points list. This list has been evolved and improved thanks to input from members of the <a href="https://discord.gg/49NaUvq" target="_blank">PlayEDH</a> discord.
+							All cards that are banned in EDH have been removed from the points list. This list has been evolved and improved thanks to input from members of the <a rel="noopener noreferrer" href="https://discord.gg/49NaUvq" target="_blank">PlayEDH</a> discord.
 						</p>
 					</section>
 
