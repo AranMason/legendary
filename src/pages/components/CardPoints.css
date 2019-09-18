@@ -15,6 +15,7 @@
 	padding: 0.5em;
 	border-radius: 0.2em 0.2em 0px 0px;
 	transition: background-color 0.5s;
+	font-family: 'Vollkorn SC', serif;
 }
 
 /* .CardPoints-selected {
@@ -35,7 +36,7 @@
 
 .CardPoints-points {
 	display: flex;
-	margin-right: 20%;
+	margin-right: 1em;
 }
 
 .CardPoints-expand {

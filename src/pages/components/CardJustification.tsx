@@ -24,9 +24,9 @@ class CardJustification extends React.Component<CardPointsProps> {
 					<img className="CardJustification-card-image" alt={this.props.name} src={this.props.image_url}></img>
 				</div>
 				<div className="CardJustification-content">
-					<h2>
+					{/* <h2>
 						{this.props.name}
-					</h2>
+					</h2> */}
 					<div className="CardJustification-exaplanation">
 						{this.props.explanation}
 					</div>

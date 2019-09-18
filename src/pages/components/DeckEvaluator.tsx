@@ -26,6 +26,16 @@ type Card = {
 	last_updated: number
 };
 
+async function scrollTo(className: string){
+	const element = document.getElementsByClassName(className);
+
+	if(element && element.length > 0){
+		element[0].scrollIntoView({
+			behavior: "smooth"
+		});
+	};
+}
+
 class DeckEvaluator extends React.Component<Props, State> {
 
 	constructor(props: Props) {
@@ -48,8 +58,16 @@ class DeckEvaluator extends React.Component<Props, State> {
 		})
 	}
 
+	
+
 	onSubmit(e: any) {
 		e.preventDefault();
+
+		if(this.state.decklist.trim().length === 0){
+			this.props.setDecklistPoints([]);
+		}
+
+		scrollTo("PointsList-list");
 
 		const regex = /^[0-9]+[xX]{0,1}\s*(?<card>[a-zA-Z',/\s]+[a-zA-Z])\s*/i
 
@@ -68,6 +86,8 @@ class DeckEvaluator extends React.Component<Props, State> {
 		})
 
 		this.props.setDecklistPoints(results);
+
+		
 	}
 
 	render() {
