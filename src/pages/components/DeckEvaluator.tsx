@@ -37,7 +37,6 @@ class DeckEvaluator extends React.Component<Props, State> {
 		}
 
 		this.onSubmit = this.onSubmit.bind(this);
-		this.renderResults = this.renderResults.bind(this);
 		this.updateDecklist = this.updateDecklist.bind(this);
 	}
 
@@ -66,43 +65,6 @@ class DeckEvaluator extends React.Component<Props, State> {
 		})
 
 		this.props.setDecklistPoints(results);
-	}
-
-	renderResults() {
-		if (!this.state.results)
-			return null;
-
-		if(this.state.results.length === 0){
-			return (
-				<div>
-					There are no pointed cards in this decklist
-				</div>
-			)
-		}
-
-		const totalPoints = this.state.results.map(card => {
-			return card.points;
-		}).reduce((sum, points) => {
-			return sum + points;
-		});
-
-		return (
-			<div>
-				<ul>
-					{this.state.results.map(card => {
-						return (
-							<li key={card.name}>
-								{`${card.name} - ${card.points}`}
-							</li>
-						)
-					})}
-				</ul>
-				<div>
-					<strong>{`Total Points: ${totalPoints}`}</strong>
-					</div>
-			</div>
-		)
-
 	}
 
 	render() {
@@ -136,8 +98,6 @@ class DeckEvaluator extends React.Component<Props, State> {
 				<div className="DeckEvaluator-footer">
 					<button onClick={this.onSubmit}>Submit</button>
 				</div>
-
-				{this.renderResults()}
 
 			</div>
 		)

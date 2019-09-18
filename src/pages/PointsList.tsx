@@ -65,7 +65,7 @@ class PointsListPage extends React.Component<Props> {
 							The objective of this list is to create a way to evaluate decks power level in regards to EDH.
 						</p>
 						<p>
-							Using the CanHigh points list as a basis for the points list, and removing cards already Banned in EDH creates the current point list of ~30 cards. A handful of cards have also been added at a default of 3 or 1 points, to be revised at a later date. These can be seen in the Personal Bias tab. I have also removed a selection of cards from the point list that come from the Candian Highlander points list due to a difference in format playability which can also be seen in the Person Bias Tab.
+							Using the CanHigh points list as a basis for the points list, and removing cards already Banned in EDH creates the current point list of ~30 cards. A handful of cards have also been added at a default of 3 or 1 points, to be revised at a later date. I have also removed a selection of cards from the point list that come from the Candian Highlander points list due to a difference in format playability, such as True-name Nemesis, Imezawa's Jitte and Mind Twist. There are also other cards on the current list that could also be revised to be lowered or removed.
 						</p>
 					</section>
 
@@ -79,7 +79,7 @@ class PointsListPage extends React.Component<Props> {
 						</p>
 					</section>
 
-					<section>
+					{/* <section>
 						<h2>Future Evolution</h2>
 						<p>
 						One consideration for the future of this list is with enough community support is releasing cards from the banned list, and giving them appropriate pointed values to allow people with them however constrain thier impact on the wider format.
@@ -87,7 +87,7 @@ class PointsListPage extends React.Component<Props> {
 						<p>
 						Another fear is this solution validating options in a non-social way by creating a codified justification for deck power levels. This will have to be accounted for and account points for social and not power-level reasons.
 						</p>
-					</section>
+					</section> */}
 
 					<section>
 						<DeckEvaluator {...PointList}/>

@@ -22,6 +22,7 @@
     "redux": "^4.0.4",
     "typescript": "3.6.3"
   },
+  "homepage": "https://aranmason.github.io/legendary/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
