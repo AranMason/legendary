@@ -114,7 +114,9 @@ class PointsListPage extends React.Component<Props> {
 							A fear is this solution validating opinions in a non-social way by creating a codified justification for deck power levels. This will have to be accounted for and account points for social and not power-level reasons.
 						</p>
 						<p>
-							Future progress will involved evaulating and evolving the list. The first iteration when evaluated against current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">Link</a>) consistantly score approximately 20 points. With outliers such as Godo Helm sitting at only 9 points, and Tymna / Thrasios hulk sitting at around 35-37 points depending on decklist.
+							Future progress will involved evaulating and evolving the list. 
+							The first iteration when evaluated against current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">link</a>) score an average of 21.27 points.
+							With outliers such as Godo Helm and Harvest Animar sitting at only 9 and 10 points respectively. (<a href="https://docs.google.com/spreadsheets/d/1B_omj0UlKoqfag01IWDJjTcoiJ1zxJpGGOcf2p1-fY4/edit#gid=606060121" rel="noopener noreferrer" target="_blank">link</a>)
 						</p>
 					</section>
 
