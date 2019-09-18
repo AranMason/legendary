@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "legendary.aran.nz/static/css/main.53b729ba.chunk.css",
-    "main.js": "legendary.aran.nz/static/js/main.7dc55ad4.chunk.js",
-    "main.js.map": "legendary.aran.nz/static/js/main.7dc55ad4.chunk.js.map",
-    "runtime~main.js": "legendary.aran.nz/static/js/runtime~main.02b5aad2.js",
-    "runtime~main.js.map": "legendary.aran.nz/static/js/runtime~main.02b5aad2.js.map",
-    "static/js/2.e6b14e4f.chunk.js": "legendary.aran.nz/static/js/2.e6b14e4f.chunk.js",
-    "static/js/2.e6b14e4f.chunk.js.map": "legendary.aran.nz/static/js/2.e6b14e4f.chunk.js.map",
-    "index.html": "legendary.aran.nz/index.html",
-    "precache-manifest.26a96eed30eb6b3ffdf485ed91b3fcb0.js": "legendary.aran.nz/precache-manifest.26a96eed30eb6b3ffdf485ed91b3fcb0.js",
-    "service-worker.js": "legendary.aran.nz/service-worker.js",
-    "static/css/main.53b729ba.chunk.css.map": "legendary.aran.nz/static/css/main.53b729ba.chunk.css.map",
-    "static/media/chevron-down-solid.svg": "legendary.aran.nz/static/media/chevron-down-solid.2c0862a6.svg",
-    "static/media/chevron-up-solid.svg": "legendary.aran.nz/static/media/chevron-up-solid.3b30c822.svg"
+    "main.css": "/legendary/static/css/main.53b729ba.chunk.css",
+    "main.js": "/legendary/static/js/main.b7e60492.chunk.js",
+    "main.js.map": "/legendary/static/js/main.b7e60492.chunk.js.map",
+    "runtime~main.js": "/legendary/static/js/runtime~main.e1e8d4bc.js",
+    "runtime~main.js.map": "/legendary/static/js/runtime~main.e1e8d4bc.js.map",
+    "static/js/2.e6b14e4f.chunk.js": "/legendary/static/js/2.e6b14e4f.chunk.js",
+    "static/js/2.e6b14e4f.chunk.js.map": "/legendary/static/js/2.e6b14e4f.chunk.js.map",
+    "index.html": "/legendary/index.html",
+    "precache-manifest.54ef25b5b07940fc8b4082fbd6296d0a.js": "/legendary/precache-manifest.54ef25b5b07940fc8b4082fbd6296d0a.js",
+    "service-worker.js": "/legendary/service-worker.js",
+    "static/css/main.53b729ba.chunk.css.map": "/legendary/static/css/main.53b729ba.chunk.css.map",
+    "static/media/chevron-down-solid.svg": "/legendary/static/media/chevron-down-solid.2c0862a6.svg",
+    "static/media/chevron-up-solid.svg": "/legendary/static/media/chevron-up-solid.3b30c822.svg"
   }
 }
