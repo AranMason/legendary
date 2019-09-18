@@ -43,9 +43,12 @@ li {
 
 a, a:link, a:visited, a:active {
 	text-decoration: none;
-	color: #FAA613
+	color: #FAA613;
 }
-
+span {
+	color: #FAA613;
+	font-weight: bold;
+}
 button {
 	background-color: #FAA613;
 	padding: 0.5em;

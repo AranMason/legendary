@@ -63,20 +63,22 @@ class PointsListPage extends React.Component<Props> {
 					<section>
 						<h2>Objective of the Points list</h2>
 						<p>
-							The objective of this list is to create a way to evaluate decks power level in regards to EDH. This project is not meant to replace commander, but rather to aid and inform discussion regarding powerlevels at the table.
+							The objective of this list is to create a way to evaluate decks power level in regards to EDH. 
+							This project is not meant to replace commander, but rather to aid and <span>inform discussion regarding powerlevels at the table.</span>
 						</p>
 						<p>
-							Using the CanHigh points list as a basis for the points list, and removing cards already Banned in EDH creates the initial points list. All cards that are banned in EDH have been removed from the points list.
+							Using the CanHigh points list as a basis for the points list, and removing cards already Banned in EDH creates the initial points list. 
+							All cards that are banned in EDH have been removed from the points list.
 						</p>
 						<p>
 							The following cards have been removed:
 						</p>
 						<ul>
 							<li>
-								Mind Twist - It sees zero play at any level of EDH/Commander. Hand attack against a single opponent is a weak stratergy in EDH/Commander.
+								<span>Mind Twist</span> - It sees zero play at any level of EDH/Commander. Hand attack against a single opponent is a weak stratergy in EDH/Commander.
 							</li>
 							<li>
-								True-name Nemesis - The multiplayer nature of the format makes protection from a single player largely irrelevent. The higher life-total also makes the preasure this card can exert significantly lower as well.
+								<span>True-name Nemesis</span> - The multiplayer nature of the format makes protection from a single player largely irrelevent. The higher life-total also makes the preasure this card can exert significantly lower as well.
 							</li>
 						</ul>
 						<p>
@@ -84,15 +86,15 @@ class PointsListPage extends React.Component<Props> {
 						</p>
 						<ul>
 							<li>
-								Cyclonic Rift - Added at 1 point, it's a powerful asymetrical boardwipe. It has been added to drive discussion, however currently it doesn't deserve a high pointing unless further discussion prompts it.
+								<span>Cyclonic Rift</span> - Added at 1 point, it's a powerful asymetrical boardwipe. It has been added to drive discussion, however currently it doesn't deserve a high pointing unless further discussion prompts it.
 							</li>
 							<li>
-								Thrasios, Triton Hero - Added at 3 points. Thrasios and Tymna both outclass most of the field and the ubiquity in the field of cEDH along with Tymna is a point of discussion in the community. I felt that adding both initally would be overkill and opted for Thrasios.
+								<span>Thrasios, Triton Hero</span> - Added at 3 points. Thrasios and Tymna both outclass most of the field and the ubiquity in the field of cEDH along with Tymna is a point of discussion in the community. I felt that adding both initally would be overkill and opted for Thrasios.
 							</li>
 						</ul>
 					</section>
 
-					<section>
+					{/* <section>
 						<h2>Impact on Deck Construction</h2>
 						<p>
 							This point list is meant to be a guide, and suplement the existing EDH banned list to constrict top level power. It is not a definitive approach to how to build a deck. The idea of the list is to create constraints and force new and interesting deck construction choices.
@@ -100,10 +102,10 @@ class PointsListPage extends React.Component<Props> {
 						<p>
 							This points list is not meant to be used as a method to shame, or justify conflict in personal playgroups. 
 						</p>
-						{/* <p>
+						<p>
 							If you do wish to construct a deck using this point list it is recommended to use either 10 or 5 points, depending on desired power level.
-						</p> */}
-					</section>
+						</p>
+					</section> */}
 
 					<section>
 						<h2>Future Evolution</h2>
@@ -115,8 +117,8 @@ class PointsListPage extends React.Component<Props> {
 						</p>
 						<p>
 							Future progress will involved evaulating and evolving the list. 
-							The first iteration when evaluated against current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">link</a>) score an average of 21.27 points.
-							With outliers such as Godo Helm and Harvest Animar sitting at only 9 and 10 points respectively. (<a href="https://docs.google.com/spreadsheets/d/1B_omj0UlKoqfag01IWDJjTcoiJ1zxJpGGOcf2p1-fY4/edit#gid=606060121" rel="noopener noreferrer" target="_blank">link</a>)
+							The first iteration when evaluated against the recommended current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">link</a>, 18/09/2019) score an average of 21.27 points (<a href="https://docs.google.com/spreadsheets/d/1B_omj0UlKoqfag01IWDJjTcoiJ1zxJpGGOcf2p1-fY4/edit#gid=606060121" rel="noopener noreferrer" target="_blank">link</a>).
+							With outliers such as Godo Helm and Harvest Animar sitting at only 9 and 10 points respectively, which gives a reasonable base line of 15 points that card selection (but not power) starts reaching compeditive levels. 
 						</p>
 					</section>
 
