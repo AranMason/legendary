@@ -20,3 +20,15 @@
 	flex-direction: column;
 
 }
+
+@media only screen and (max-width: 1200px) {
+	.PointsList-content {
+		flex: 1;
+	}
+  }
+
+  @media only screen and (max-width: 800px) {
+	.PointsList{
+		flex-direction: column-reverse;
+	}
+  }
