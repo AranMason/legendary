@@ -66,31 +66,9 @@ class PointsListPage extends React.Component<Props> {
 							This project is not meant to replace commander, but rather to aid and <span>inform discussion regarding powerlevels at the table.</span>
 						</p>
 						<p>
-							Using the CanHigh points list as a basis for the points list, and removing cards already Banned in EDH creates the initial points list.
-							All cards that are banned in EDH have been removed from the points list.
+							Using the Candian Highlander points list as a basis for the points list, and removing cards already Banned in EDH creates the initial points list.
+							All cards that are banned in EDH have been removed from the points list. This list has been evolved and improved thanks to input from members of the <a href="https://discord.gg/49NaUvq" target="_blank">PlayEDH</a> discord.
 						</p>
-						{/* <p>
-							The following cards have been removed:
-						</p>
-						<ul>
-							<li>
-								<span>Mind Twist</span> - It sees zero play at any level of EDH/Commander. Hand attack against a single opponent is a weak stratergy in EDH/Commander.
-							</li>
-							<li>
-								<span>True-name Nemesis</span> - The multiplayer nature of the format makes protection from a single player largely irrelevent. The higher life-total also makes the preasure this card can exert significantly lower as well.
-							</li>
-						</ul>
-						<p>
-							The following cards have been added:
-						</p>
-						<ul>
-							<li>
-								<span>Cyclonic Rift</span> - Added at 1 point, it's a powerful asymetrical boardwipe. It has been added to drive discussion, however currently it doesn't deserve a high pointing unless further discussion prompts it.
-							</li>
-							<li>
-								<span>Thrasios, Triton Hero</span> - Added at 3 points. Thrasios and Tymna both outclass most of the field and the ubiquity in the field of cEDH along with Tymna is a point of discussion in the community. I felt that adding both initally would be overkill and opted for Thrasios.
-							</li>
-						</ul> */}
 					</section>
 
 					<section>
