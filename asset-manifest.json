@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/legendary/static/css/main.5cceb857.chunk.css",
-    "main.js": "/legendary/static/js/main.39cfb647.chunk.js",
-    "main.js.map": "/legendary/static/js/main.39cfb647.chunk.js.map",
+    "main.css": "/legendary/static/css/main.35a6bd4c.chunk.css",
+    "main.js": "/legendary/static/js/main.7360d69e.chunk.js",
+    "main.js.map": "/legendary/static/js/main.7360d69e.chunk.js.map",
     "runtime~main.js": "/legendary/static/js/runtime~main.e1e8d4bc.js",
     "runtime~main.js.map": "/legendary/static/js/runtime~main.e1e8d4bc.js.map",
     "static/js/2.4058ef01.chunk.js": "/legendary/static/js/2.4058ef01.chunk.js",
     "static/js/2.4058ef01.chunk.js.map": "/legendary/static/js/2.4058ef01.chunk.js.map",
     "index.html": "/legendary/index.html",
-    "precache-manifest.ac2c00797023771b179817536661dee7.js": "/legendary/precache-manifest.ac2c00797023771b179817536661dee7.js",
+    "precache-manifest.d825c0d6b58d5cd2cd714b7f7cc029c0.js": "/legendary/precache-manifest.d825c0d6b58d5cd2cd714b7f7cc029c0.js",
     "service-worker.js": "/legendary/service-worker.js",
-    "static/css/main.5cceb857.chunk.css.map": "/legendary/static/css/main.5cceb857.chunk.css.map",
+    "static/css/main.35a6bd4c.chunk.css.map": "/legendary/static/css/main.35a6bd4c.chunk.css.map",
     "static/media/chevron-down-solid.svg": "/legendary/static/media/chevron-down-solid.2c0862a6.svg",
     "static/media/chevron-up-solid.svg": "/legendary/static/media/chevron-up-solid.3b30c822.svg"
   }
