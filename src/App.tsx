@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import PointsListPage from './pages/PointsList';
 
@@ -10,8 +10,7 @@ const App: React.FC = () => {
 		<Router>
 		<div className="App">
 			<header className="App-header">
-			<Link to="/">Legendary Commander</Link>
-			<Link to="/points">Points List</Link>
+			Legendary Commander
       </header>
 			<section className="App-body">
 					<Route path="/" component={PointsListPage} />

@@ -3,6 +3,7 @@ import React from 'react';
 import PointList from '../data/points.json';
 import './PointsList.css';
 import CardPoints from './components/CardPoints';
+import DeckEvaluator from './components/DeckEvaluator';
 
 class PointsListPage extends React.Component {
 	render() {
@@ -49,7 +50,9 @@ class PointsListPage extends React.Component {
 						</p>
 					</section>
 
-
+					<section>
+						<DeckEvaluator {...PointList}/>
+					</section>
 				</div>
 			</div>
 		)

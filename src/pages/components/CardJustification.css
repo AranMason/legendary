@@ -1,0 +1,34 @@
+.CardJustification {
+	display: flex;
+	flex-direction: row;
+}
+
+.CardJustification-card-container {
+	width: 30%;
+}
+.CardJustification-card-image {
+	width: 100%;
+}
+
+.CardJustification-content{
+	flex: 1;
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1em;
+}
+.CardJustification-exaplanation {
+	flex: 1;
+}
+.CardJustification-footer {
+	font-size: 0.8em;
+	text-align: right;
+	flex-direction: row;
+	display: flex;
+}
+
+.CardJustification-footer-update {
+	flex: 1;
+	padding-right: 1em;
+	text-align: right;
+}
