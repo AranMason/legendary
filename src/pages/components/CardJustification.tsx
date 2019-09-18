@@ -29,9 +29,6 @@ type CardPointsProps =
 class CardJustification extends React.Component<CardPointsProps> {
 
 	render() {
-
-		const last_update = new Date(this.props.changes.last_updated);
-
 		return (
 			<div className="CardJustification">
 				<div className="CardJustification-card-container">
