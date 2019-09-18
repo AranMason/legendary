@@ -74,9 +74,9 @@ class PointsListPage extends React.Component<Props> {
 						<p>
 							This point list is meant to be a guide, and suplement the existing EDH banned list to constrict top level power. It is not a definitive approach to how to build a deck. The idea of the list is to create constraints and force new and interesting deck construction choices.
 						</p>
-						<p>
+						{/* <p>
 							If you do wish to construct a deck using this point list it is recommended to use either 10 or 5 points, depending on desired power level.
-						</p>
+						</p> */}
 					</section>
 
 					{/* <section>

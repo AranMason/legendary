@@ -74,26 +74,8 @@ class DeckEvaluator extends React.Component<Props, State> {
 				<h2>
 					Deck Evaluator
 				</h2>
-				<p>
-					Paste your decklist below and discover your decks point total
-				</p>
-				<h3>
-					Supported Formats:
 
-				</h3>
-				<ul>
-						<li>
-							1x Card Name
-					</li>
-						<li>
-							1 Card Name
-					</li>
-						<li>
-							Card Name
-					</li>
-					</ul>
-
-				<textarea value={this.state.decklist} onChange={this.updateDecklist} className="DeckEvaluator-text" placeholder="Enter your decklist here...">
+				<textarea value={this.state.decklist} onChange={this.updateDecklist} className="DeckEvaluator-text" placeholder="Enter your decklist here to find your points total...">
 
 				</textarea>
 				<div className="DeckEvaluator-footer">
