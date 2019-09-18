@@ -34,9 +34,9 @@ class PointsListPage extends React.Component<Props> {
 
 			return (
 				<div>
-					<h3>
+					<h4>
 						{`Total Points: ${totalPoints}`}
-					</h3>
+					</h4>
 
 				</div>
 			)
@@ -51,12 +51,13 @@ class PointsListPage extends React.Component<Props> {
 
 				<div className="PointsList-list">
 				<h2>Point List</h2>
+				{this.renderTotalPoints()}
 					{
 						PointList.cards.map(card => {
 							return <CardPoints {...card} key={card.name} />
 						})
 					}
-					{this.renderTotalPoints()}
+					
 				</div>
 				<div className="PointsList-content">
 					<section>

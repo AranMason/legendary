@@ -9,11 +9,6 @@
 	min-height: 50vh;
 	resize: none;
 	height: 100%;
-	padding: 1em;
-	border-style: solid;
-	border-color: #FFBF69;
-	background-color: rgb(250, 236, 217);
-	border-width: 0px 0px 0px 3px;
 	font-size: 1.5em;
 }
 

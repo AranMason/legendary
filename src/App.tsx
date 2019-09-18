@@ -10,7 +10,10 @@ const App: React.FC = () => {
 		<Router>
 		<div className="App">
 			<header className="App-header">
-			Legendary Commander
+				<h1>
+					Legendary Commander
+				</h1>
+			
       </header>
 			<section className="App-body">
 					<Route path="/" component={PointsListPage} />
