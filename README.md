@@ -22,7 +22,7 @@ Added:
 - Tymna: 1;
 
 Changed:
-- Thrasios: 2;
+- Thrasios: 3 to 2; Creates room for Tymna on the list
 
 Not added:
 - Doomsday

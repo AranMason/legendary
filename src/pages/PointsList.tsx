@@ -15,14 +15,14 @@ type Props = {
 
 class PointsListPage extends React.Component<Props> {
 
-	constructor(props: Props){
+	constructor(props: Props) {
 		super(props);
 
 		this.renderTotalPoints = this.renderTotalPoints.bind(this);
 	}
 
-	renderTotalPoints(){
-		if(this.props.decklist && this.props.decklist.length > 0){
+	renderTotalPoints() {
+		if (this.props.decklist && this.props.decklist.length > 0) {
 
 			const totalPoints = this.props.decklist.map((card: {
 				points: number
@@ -50,7 +50,7 @@ class PointsListPage extends React.Component<Props> {
 
 
 				<div className="PointsList-list">
-				<h2>Point List</h2>
+					<h2>Point List</h2>
 					{this.renderTotalPoints()}
 					{
 						PointList.cards.map(card => {
@@ -93,36 +93,75 @@ class PointsListPage extends React.Component<Props> {
 						</ul> */}
 					</section>
 
-					{/* <section>
-						<h2>Impact on Deck Construction</h2>
-						<p>
-							This point list is meant to be a guide, and suplement the existing EDH banned list to constrict top level power. It is not a definitive approach to how to build a deck. The idea of the list is to create constraints and force new and interesting deck construction choices.
-						</p>
-						<p>
-							This points list is not meant to be used as a method to shame, or justify conflict in personal playgroups.
-						</p>
-						<p>
-							If you do wish to construct a deck using this point list it is recommended to use either 10 or 5 points, depending on desired power level.
-						</p>
-					</section> */}
-
 					<section>
-						<h2>Future Evolution</h2>
-						{/* <p>
-						One consideration for the future of this list is with enough community support is releasing cards from the banned list, and giving them appropriate pointed values to allow people with them however constrain thier impact on the wider format.
-						</p> */}
-						<p>
-							A fear is this solution validating opinions in a non-social way by creating a codified justification for deck power levels. This will have to be accounted for and account points for social and not power-level reasons.
-						</p>
-						<p>
-							Future progress will involved evaulating and evolving the list.
-							The first iteration when evaluated against the recommended current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">link</a>, 18/09/2019) score an average of 21.27 points (<a href="https://docs.google.com/spreadsheets/d/1B_omj0UlKoqfag01IWDJjTcoiJ1zxJpGGOcf2p1-fY4/edit#gid=606060121" rel="noopener noreferrer" target="_blank">link</a>).
-							With outliers such as Godo Helm and Harvest Animar sitting at only 9 and 10 points respectively, which gives a reasonable base line of 15 points that card selection (but not power) starts reaching compeditive levels.
-						</p>
+						<DeckEvaluator {...PointList} />
 					</section>
 
 					<section>
-						<DeckEvaluator {...PointList}/>
+						<h2>
+							Change Log:
+						</h2>
+
+						<h3>Removed:</h3>
+						<ul>
+							<li>
+								<span>Strip Mine</span>
+							</li>
+							<li>
+								<span>Dig through Time</span>
+							</li>
+							<li>
+								<span>Treasure Cruise</span>
+							</li>
+							<li>
+								<span>Umezawa's Jitte</span>
+							</li>
+							<li>
+								<span>Stoneforge Mystic</span>
+							</li>
+						</ul>
+
+						<h3>Added:</h3>
+						<ul>
+							<li>
+								<span>Ad Nauseam</span> - 2
+							</li>
+							<li>
+								<span>Necropotence</span> - 1
+							</li>
+							<li>
+								<span>Tainted Pact</span> - 2
+							</li>
+							<li>
+								<span>Food Chain</span> - 1
+							</li>
+							<li>
+								<span>Hermit Druid</span> - 1
+							</li>
+							<li>
+								<span>Isochron Scepter</span> - 1 - Might be better to add Dramatic Reversal instead, as Isochron has more 'fair' uses.
+							</li>
+							<li>
+								<span>Lion's Eye Diamond</span> - 1
+							</li>
+							<li>
+								<span>Mystic Remora</span> - 1
+							</li>
+							<li>
+								<span>Carpet of Flowers</span> - 1
+							</li>
+							<li>
+								<span>Tymna the Weaver</span> - 1
+							</li>
+						</ul>
+						<h3>
+							Changed:
+						</h3>
+						<ul>
+							<li>
+								<span>Thrasios, Triton Hero</span> - Down from 3 to 2.
+							</li>
+						</ul>
 					</section>
 				</div>
 			</div>
@@ -130,7 +169,7 @@ class PointsListPage extends React.Component<Props> {
 	}
 }
 
-const mapStateToProps = (state:any) => {
+const mapStateToProps = (state: any) => {
 	return {
 		decklist: state.deck.decklist
 	}
