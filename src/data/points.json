@@ -5,7 +5,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/0/a/0a4ce4a1-65e3-4b40-be35-8fc55a968ec8.jpg?1562700939",
       "scryfall_uri": "https://scryfall.com/card/ala/63/ad-nauseam?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Allows the player to draw too many cards for too cheap at instant speed.",
       "date_created": 1568840718001,
       "last_updated": 1568840718001
     },
@@ -14,7 +14,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/b/7/b768efa2-e56b-4a7e-ace8-d673f10e0714.jpg?1562880960",
       "scryfall_uri": "https://scryfall.com/card/nph/104/birthing-pod?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "A powerful creature tutor, that can find and enable combos, such as Kiki-Jiki.",
       "date_created": 1568840718935,
       "last_updated": 1568840718935
     },
@@ -23,7 +23,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/9/3/93abb48a-85f2-432d-8602-0a1d17fbb409.jpg?1562926232",
       "scryfall_uri": "https://scryfall.com/card/usg/240/carpet-of-flowers?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "In a multiplayer format, you can semi-reliably have at least one opponent running blue. Meaning this becomes a powerful ramp piece, that is worth a slot even if it sometimes does nothing.",
       "date_created": 1568840720615,
       "last_updated": 1568840720615
     },
@@ -32,7 +32,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/1/5/15c34f32-49d9-4a0d-83b2-28172f54fdd1.jpg?1562229271",
       "scryfall_uri": "https://scryfall.com/card/ddr/7/crop-rotation?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Power land tutor, we paired with the potent fast mana and utility it offers you access to at instant spell.",
       "date_created": 1568840721452,
       "last_updated": 1568840721452
     },
@@ -41,7 +41,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/2/6/268f6afc-bf16-4ca7-a986-945a95d3bffc.jpg?1561761668",
       "scryfall_uri": "https://scryfall.com/card/mm3/35/cyclonic-rift?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Potent asymetrical board reset that can be leveraged at instant speed. Along with utility for targeted removal as well creates a powerful and flexible interaction spell.",
       "date_created": 1568840722990,
       "last_updated": 1568840722990
     },
@@ -50,7 +50,7 @@
       "points": 4,
       "image_url": "https://img.scryfall.com/cards/normal/front/3/b/3bdbc231-5316-4abd-9d8d-d87cff2c9847.jpg?1547516843",
       "scryfall_uri": "https://scryfall.com/card/uma/93/demonic-tutor?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Flexible tutor at a low cost, that doesn't cost you a card.",
       "date_created": 1568840723828,
       "last_updated": 1568840723828
     },
@@ -59,7 +59,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/0/c/0c9ebec9-3474-4062-9607-2e2a72f78299.jpg?1562165401",
       "scryfall_uri": "https://scryfall.com/card/ema/9/enlightened-tutor?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Enlightened Tutor allows you to find some of the most potent permanent type in EDH at instant speed.",
       "date_created": 1568840725363,
       "last_updated": 1568840725363
     },
@@ -68,7 +68,7 @@
       "points": 6,
       "image_url": "https://img.scryfall.com/cards/normal/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg?1562441617",
       "scryfall_uri": "https://scryfall.com/card/a25/57/flash?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Protean Hulk. Nuff said. This is a powerful enabler of flash hulk combo(s).",
       "date_created": 1568840725662,
       "last_updated": 1568840725662
     },
@@ -77,7 +77,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/1/8/18a1bb9e-006c-495e-8f99-d451183d2669.jpg?1562379435",
       "scryfall_uri": "https://scryfall.com/card/mmq/246/food-chain?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Allows foodchain loops, particularly in commander, where the normal cost of exiling the creature is able to circumvented with the command zone.",
       "date_created": 1568840727254,
       "last_updated": 1568840727254
     },
@@ -86,7 +86,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/4/2/42ad0f12-29c6-420c-858e-c8d3cc1b5636.jpg?1562429338",
       "scryfall_uri": "https://scryfall.com/card/tpr/175/hermit-druid?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Allows you put your library into your graveyard at low oppertunity cost in 3 or more colours by warping your manabase.",
       "date_created": 1568840727534,
       "last_updated": 1568840727534
     },
@@ -95,7 +95,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/6/0/6023bfe0-84bf-454c-b29d-5d128fe3e6b5.jpg?1562869020",
       "scryfall_uri": "https://scryfall.com/card/me2/96/imperial-seal?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "A cheap tutor.",
       "date_created": 1568840729106,
       "last_updated": 1568840729106
     },
@@ -104,7 +104,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/b/1/b13e73a5-067d-4dbd-9c98-34a0db6140de.jpg?1562431264",
       "scryfall_uri": "https://scryfall.com/card/tpr/54/intuition?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Allows you to search and entomb cards from your library at a low cost at instant speed. Often can be manipulated to migitate choice offered to your opponent",
       "date_created": 1568840729938,
       "last_updated": 1568840729938
     },
@@ -113,7 +113,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/4/9/49c0e902-f7ee-4dab-9a07-025a305c9958.jpg?1562168046",
       "scryfall_uri": "https://scryfall.com/card/ema/223/isochron-scepter?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Enables powerful mana combos when paired with Dramatic Reversal.",
       "date_created": 1568840731466,
       "last_updated": 1568840731466
     },
@@ -122,7 +122,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/7/5/758f95f8-bcb0-43ae-b474-56ebd855951e.jpg?1562918582",
       "scryfall_uri": "https://scryfall.com/card/vma/271/lions-eye-diamond?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Lion's Eye is a cheap artifact with small oppertunity cost. Having constant access to an outlet in the command zone means the discard cost is migitated.",
       "date_created": 1568840732367,
       "last_updated": 1568840732367
     },
@@ -131,7 +131,7 @@
       "points": 4,
       "image_url": "https://img.scryfall.com/cards/normal/front/0/c/0cb33b46-4d1b-4f97-bfdc-d815aee111da.jpg?1562165409",
       "scryfall_uri": "https://scryfall.com/card/ema/225/mana-crypt?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Provides too much mana for it's cost. The preasure it applies to your life total is also minimal due to the large lifetotals of the format.",
       "date_created": 1568840734110,
       "last_updated": 1568840734110
     },
@@ -140,7 +140,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/4/1/416d2d51-8f29-4e95-b037-e8c32b081e6c.jpg?1562848002",
       "scryfall_uri": "https://scryfall.com/card/ima/65/mana-drain?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Counterspell with upside?",
       "date_created": 1568840734948,
       "last_updated": 1568840734948
     },
@@ -149,7 +149,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/c/f/cfdf9706-acdb-48fc-89db-93bc50b3b9ad.jpg?1547518467",
       "scryfall_uri": "https://scryfall.com/card/uma/229/mana-vault?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Colourless mana ritual. Can also be manipulated due to it's artifact typing",
       "date_created": 1568840736522,
       "last_updated": 1568840736522
     },
@@ -158,7 +158,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/b/b/bb5385d2-ca5d-4fb9-934b-b7cc8b38ac89.jpg?1562932678",
       "scryfall_uri": "https://scryfall.com/card/8ed/91/merchant-scroll?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "",
       "date_created": 1568840737348,
       "last_updated": 1568840737348
     },
@@ -167,7 +167,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/1/3/13a08c07-e8b8-43bf-99e6-d268c79a62bf.jpg?1559592432",
       "scryfall_uri": "https://scryfall.com/card/me1/42/mystic-remora?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "With creature stratergies being unfavoured and multiplayer nature of the format makes this a potent draw engine for a very low cost.",
       "date_created": 1568840738932,
       "last_updated": 1568840738932
     },
@@ -176,7 +176,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/9/2/9264ecb7-bfc0-495d-aaaa-829045ea858f.jpg?1562171106",
       "scryfall_uri": "https://scryfall.com/card/ema/62/mystical-tutor?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Instant speed tutor",
       "date_created": 1568840739785,
       "last_updated": 1568840739785
     },
@@ -185,7 +185,7 @@
       "points": 4,
       "image_url": "https://img.scryfall.com/cards/normal/front/b/f/bfe3329c-7faa-4925-b9d2-075a1ab27e80.jpg?1562173130",
       "scryfall_uri": "https://scryfall.com/card/ema/177/natural-order?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Cheating on mana out of your library for powerful finishers.",
       "date_created": 1568840741387,
       "last_updated": 1568840741387
     },
@@ -194,7 +194,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/c/8/c89c6895-b0f8-444a-9c89-c6b4fd027b3e.jpg?1562853736",
       "scryfall_uri": "https://scryfall.com/card/ima/98/necropotence?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Potent card advantage engine, combined with high starting life totals, make the opportunity cost minimal",
       "date_created": 1568840741672,
       "last_updated": 1568840741672
     },
@@ -203,25 +203,16 @@
       "points": 3,
       "image_url": "https://img.scryfall.com/cards/normal/front/2/f/2f0c4714-b9cd-48a3-8a2a-72860d0ac000.jpg?1562434028",
       "scryfall_uri": "https://scryfall.com/card/a25/185/protean-hulk?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Potent combo tutor.",
       "date_created": 1568840743197,
       "last_updated": 1568840743197
-    },
-    {
-      "name": "Rhystic Study",
-      "points": 1,
-      "image_url": "https://img.scryfall.com/cards/normal/front/3/3/3394cefd-a3c6-4917-8f46-234e441ecfb6.jpg?1562904580",
-      "scryfall_uri": "https://scryfall.com/card/pcy/45/rhystic-study?utm_source=api",
-      "explanation": "TO BE ADDED",
-      "date_created": 1568840743481,
-      "last_updated": 1568840743481
     },
     {
       "name": "Sol Ring",
       "points": 4,
       "image_url": "https://img.scryfall.com/cards/normal/front/e/6/e672d408-997c-4a19-810a-3da8411eecf2.jpg?1568004958",
       "scryfall_uri": "https://scryfall.com/card/c19/221/sol-ring?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Adds a lot of mana for a small cost, often putting the person who plays it approximately two turns ahead of the table.",
       "date_created": 1568840745024,
       "last_updated": 1568840745024
     },
@@ -230,7 +221,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/7/4/74b4c336-5d4c-4bc5-b82a-35084a6ad808.jpg?1562918363",
       "scryfall_uri": "https://scryfall.com/card/bbd/41/spellseeker?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Powerful tutor on a body.",
       "date_created": 1568840745878,
       "last_updated": 1568840745878
     },
@@ -239,7 +230,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/4/5/4550b26a-3a73-4724-99d5-1e0a52c36701.jpg?1562435344",
       "scryfall_uri": "https://scryfall.com/card/a25/189/summoners-pact?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Creature tutor, that costs nothing to play.",
       "date_created": 1568840747450,
       "last_updated": 1568840747450
     },
@@ -248,7 +239,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/4/e/4ef0d7f9-ddb9-4e83-a9bf-09bec22fc80d.jpg?1562429365",
       "scryfall_uri": "https://scryfall.com/card/tpr/199/survival-of-the-fittest?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Powerful enabler and tutor.",
       "date_created": 1568840748303,
       "last_updated": 1568840748303
     },
@@ -257,7 +248,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/c/5/c513f51b-a0db-4c08-8acc-1e91060b93b7.jpg?1562931887",
       "scryfall_uri": "https://scryfall.com/card/ody/164/tainted-pact?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Potent enabler for compact labman win conditions",
       "date_created": 1568840749870,
       "last_updated": 1568840749870
     },
@@ -266,7 +257,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1562391653",
       "scryfall_uri": "https://scryfall.com/card/c16/46/thrasios-triton-hero?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Partner mechanic and an outlet for infinite colourless mana.",
       "date_created": 1568840750142,
       "last_updated": 1568840750142
     },
@@ -275,7 +266,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/2/8/2888553d-5ed0-4e47-8cc2-1491b5557c53.jpg?1562904620",
       "scryfall_uri": "https://scryfall.com/card/me4/69/transmute-artifact?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "",
       "date_created": 1568840751765,
       "last_updated": 1568840751765
     },
@@ -284,7 +275,7 @@
       "points": 1,
       "image_url": "https://img.scryfall.com/cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1562417406",
       "scryfall_uri": "https://scryfall.com/card/c16/48/tymna-the-weaver?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Partner mechanic and reliable card draw engine in a multiplayer format.",
       "date_created": 1568840754120,
       "last_updated": 1568840754120
     },
@@ -293,7 +284,7 @@
       "points": 2,
       "image_url": "https://img.scryfall.com/cards/normal/front/e/7/e7e778ce-3f1e-4626-8f55-bba03970d91a.jpg?1562174771",
       "scryfall_uri": "https://scryfall.com/card/ema/112/vampiric-tutor?utm_source=api",
-      "explanation": "TO BE ADDED",
+      "explanation": "Potent flexible tutor with small cost to play.",
       "date_created": 1568840754978,
       "last_updated": 1568840754978
     }
