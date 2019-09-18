@@ -1,15 +1,20 @@
 import React from 'react';
 import './DeckEvaluator.css'
 
+import { connect } from 'react-redux';
+
+import { setDecklistPoints } from '../../actions/decklistActions'
+
 type Props = {
-	cards: Array<Card>
-}
+	cards: Array<Card>,
+	setDecklistPoints: any
+};
 
 type State = {
 	decklist: string,
 	cards: Array<string>,
 	results?: Array<Card>
-}
+};
 
 type Card = {
 	name: string,
@@ -17,7 +22,7 @@ type Card = {
 	scryfall: any,
 	explanation: string,
 	changes: any
-}
+};
 
 class DeckEvaluator extends React.Component<Props, State> {
 
@@ -52,19 +57,15 @@ class DeckEvaluator extends React.Component<Props, State> {
 
 		entries.forEach(entry => {
 				const result = entry.match(regex);
-
-				console.log(result);
 				if(result && result.groups && this.state.cards.indexOf(result.groups.card.trim()) >= 0){
 					cards.push(result.groups.card.trim());
 				}
 		})
-		console.log("Cards", cards);
-
-		this.setState({
-			results: this.props.cards.filter((card) => {
-				return cards.indexOf(card.name) >= 0
-			})
+		const results = this.props.cards.filter((card) => {
+			return cards.indexOf(card.name) >= 0
 		})
+
+		this.props.setDecklistPoints(results);
 	}
 
 	renderResults() {
@@ -90,7 +91,7 @@ class DeckEvaluator extends React.Component<Props, State> {
 				<ul>
 					{this.state.results.map(card => {
 						return (
-							<li>
+							<li key={card.name}>
 								{`${card.name} - ${card.points}`}
 							</li>
 						)
@@ -143,4 +144,10 @@ class DeckEvaluator extends React.Component<Props, State> {
 	}
 }
 
-export default DeckEvaluator;
+const mapDispatchToProps = (dispatch: any) => {
+	return {
+		setDecklistPoints: (decklist: Array<any>) => dispatch(setDecklistPoints(decklist))
+	}
+}
+
+export default connect(null, mapDispatchToProps)(DeckEvaluator);

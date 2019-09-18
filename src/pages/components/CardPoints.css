@@ -11,20 +11,20 @@
 	flex: 1;
 	border-width: 0px 0px 2px 0px;
 	/* border-style: solid; */
-	background-color: #FAA613;
+	/* background-color: #FAA613; */
 	padding: 0.5em;
 	border-radius: 0.2em 0.2em 0px 0px;
+	transition: background-color 0.5s;
 }
 
-.CardPoints-selected {
+/* .CardPoints-selected {
 	background-color: #C5D86D;
-}
+} */
 
 .CardPoints-expanded {
 	border-style: solid;
 	border-width: 0px 2px 2px 2px;
 	padding: 0.5em;
-	border-color: #FAA613;
 	border-radius: 0px 0px 0.2em 0.2em;
 }
 

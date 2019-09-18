@@ -5,7 +5,45 @@ import './PointsList.css';
 import CardPoints from './components/CardPoints';
 import DeckEvaluator from './components/DeckEvaluator';
 
-class PointsListPage extends React.Component {
+import { connect } from 'react-redux';
+
+type Props = {
+	decklist: Array<{
+		points: number
+	}>
+}
+
+class PointsListPage extends React.Component<Props> {
+
+	constructor(props: Props){
+		super(props);
+
+		this.renderTotalPoints = this.renderTotalPoints.bind(this);
+	}
+
+	renderTotalPoints(){
+		if(this.props.decklist && this.props.decklist.length > 0){
+
+			const totalPoints = this.props.decklist.map((card: {
+				points: number
+			}) => {
+				return card.points
+			}).reduce((sum: number, points: number) => {
+				return sum + points;
+			})
+
+			return (
+				<div>
+					<h3>
+						{`Total Points: ${totalPoints}`}
+					</h3>
+
+				</div>
+			)
+		}
+		return null;
+	}
+
 	render() {
 		return (
 			<div className="PointsList">
@@ -18,6 +56,7 @@ class PointsListPage extends React.Component {
 							return <CardPoints {...card} key={card.name} />
 						})
 					}
+					{this.renderTotalPoints()}
 				</div>
 				<div className="PointsList-content">
 					<section>
@@ -59,4 +98,10 @@ class PointsListPage extends React.Component {
 	}
 }
 
-export default PointsListPage;
+const mapStateToProps = (state:any) => {
+	return {
+		decklist: state.deck.decklist
+	}
+}
+
+export default connect(mapStateToProps)(PointsListPage);

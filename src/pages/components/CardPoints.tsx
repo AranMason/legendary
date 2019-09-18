@@ -7,6 +7,8 @@ import DownArrow from '../../icons/chevron-down-solid.svg';
 
 import CardJustification from './CardJustification';
 
+import { connect } from 'react-redux';
+
 type CardPointsProps =
 {
 	name: string,
@@ -16,7 +18,8 @@ type CardPointsProps =
 	changes: {
 		date_created: number,
 		last_updated: number
-	}
+	},
+	decklist: Array<any>
 }
 
 type CardPointsState = {
@@ -52,13 +55,15 @@ class CardPoints extends React.Component<CardPointsProps, CardPointsState> {
 		}
 	}
 
-	renderContent(){
+	renderContent(styleColour: string){
 		if(!this.state.hasExpanded){
 			return null;
 		}
 
 		return (
-			<div className="CardPoints-expanded">
+			<div className="CardPoints-expanded" style={{
+				borderColor: styleColour
+			}}>
 				<CardJustification {...this.props}/>
 			</div>
 
@@ -66,9 +71,18 @@ class CardPoints extends React.Component<CardPointsProps, CardPointsState> {
 	}
 
 	render(){
+
+		const isInDecklist = this.props.decklist.find(card => {
+			return card.name === this.props.name
+		});
+
+		const styleColour = isInDecklist ? "#C5D86D" : "#FAA613";
+
 		return (
 			<div className="CardPoints">
-				<div className="CardPoints-title">
+				<div className="CardPoints-title" style={{
+					backgroundColor: styleColour
+				}}>
 					<div className="CardPoints-name">
 						<strong>{this.props.name}</strong>
 					</div>
@@ -76,13 +90,20 @@ class CardPoints extends React.Component<CardPointsProps, CardPointsState> {
 						<strong>{this.props.points}</strong>
 					</div>
 					<div className="CardPoints-expand">
-					<img alt="expand" src={this.renderArrow()} onClick={this.toggleExpanded}></img>
+						<img alt="expand" src={this.renderArrow()} onClick={this.toggleExpanded}></img>
 					</div>
 				</div>
-				{this.renderContent()}
+				{this.renderContent(styleColour)}
 			</div>
 		)
 	}
 }
 
-export default CardPoints;
+const mapStateToProps = (state: any) => {
+
+	return {
+		decklist: state.deck.decklist
+	}
+}
+
+export default connect(mapStateToProps)(CardPoints);
