@@ -48,7 +48,8 @@ class DeckEvaluator extends React.Component<Props, State> {
 
 	onSubmit(e: any) {
 		e.preventDefault();
-		const regex = /[0-9]+[xX]{0,1}(?<card>.*)/i
+
+		const regex = /^[0-9]+[xX]{0,1}\s*(?<card>[a-zA-Z',/\s]+[a-zA-Z])\s*/i
 
 		const entries = this.state.decklist.split('\n');
 
@@ -56,8 +57,8 @@ class DeckEvaluator extends React.Component<Props, State> {
 
 		entries.forEach(entry => {
 				const result = entry.match(regex);
-				if(result && result.groups && this.state.cards.indexOf(result.groups.card.trim()) >= 0){
-					cards.push(result.groups.card.trim());
+				if(result && result.groups && this.state.cards.indexOf(result.groups.card) >= 0){
+					cards.push(result.groups.card);
 				}
 		})
 		const results = this.props.cards.filter((card) => {
