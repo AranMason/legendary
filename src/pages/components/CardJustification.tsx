@@ -45,7 +45,7 @@ class CardJustification extends React.Component<CardPointsProps> {
 						<div className="CardJustification-footer-update">
 							Last updated: {moment(this.props.changes.last_updated).fromNow()}
 						</div>
-						<div >
+						<div className="CardJustification-footer-cardlink">
 							<a className="CardJustification-footer-button" href={this.props.scryfall.scryfall_uri} target="_blank" rel="noopener noreferrer">
 								<button>
 									View Card

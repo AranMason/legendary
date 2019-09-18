@@ -43,7 +43,7 @@ li {
 
 a, a:link, a:visited, a:active {
 	text-decoration: none;
-	color: #ffffff
+	color: #FAA613
 }
 
 button {
@@ -52,6 +52,8 @@ button {
 	border-radius: 0.5em;
 	border-style: none;
 	transition: background-color 0.2s;
+	color: #ffffff;
+	font-size: 1em;
 }
 
 button:hover {

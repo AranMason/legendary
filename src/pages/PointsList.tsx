@@ -105,15 +105,18 @@ class PointsListPage extends React.Component<Props> {
 						</p> */}
 					</section>
 
-					{/* <section>
+					<section>
 						<h2>Future Evolution</h2>
-						<p>
+						{/* <p>
 						One consideration for the future of this list is with enough community support is releasing cards from the banned list, and giving them appropriate pointed values to allow people with them however constrain thier impact on the wider format.
+						</p> */}
+						<p>
+							A fear is this solution validating opinions in a non-social way by creating a codified justification for deck power levels. This will have to be accounted for and account points for social and not power-level reasons.
 						</p>
 						<p>
-						Another fear is this solution validating options in a non-social way by creating a codified justification for deck power levels. This will have to be accounted for and account points for social and not power-level reasons.
+							Future progress will involved evaulating and evolving the list. The first iteration when evaluated against current version of Primary cEDH decks found in the cEDH Database (<a href="https://cedh-decklist-database.xyz/primary.html" rel="noopener noreferrer" target="_blank">Link</a>) consistantly score approximately 20 points. With outliers such as Godo Helm sitting at only 9 points, and Tymna / Thrasios hulk sitting at around 35-37 points depending on decklist.
 						</p>
-					</section> */}
+					</section>
 
 					<section>
 						<DeckEvaluator {...PointList}/>
