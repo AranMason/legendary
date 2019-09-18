@@ -8,21 +8,10 @@ type CardPointsProps =
 		name: string,
 		points: number,
 		explanation: string,
-		scryfall: {
-			image_uris: {
-				"small": string,
-				"normal": string,
-				"large": string,
-				"png": string,
-				"art_crop": string,
-				"border_crop": string
-			},
-			scryfall_uri: string
-		},
-		changes: {
-			date_created: number,
-			last_updated: number
-		}
+		image_url: string,
+		scryfall_uri: string
+		date_created: number,
+		last_updated: number
 	}
 
 
@@ -32,7 +21,7 @@ class CardJustification extends React.Component<CardPointsProps> {
 		return (
 			<div className="CardJustification">
 				<div className="CardJustification-card-container">
-					<img className="CardJustification-card-image" alt={this.props.name} src={this.props.scryfall.image_uris.normal}></img>
+					<img className="CardJustification-card-image" alt={this.props.name} src={this.props.image_url}></img>
 				</div>
 				<div className="CardJustification-content">
 					<h2>
@@ -43,10 +32,10 @@ class CardJustification extends React.Component<CardPointsProps> {
 					</div>
 					<div className="CardJustification-footer">
 						<div className="CardJustification-footer-update">
-							Last updated: {moment(this.props.changes.last_updated).fromNow()}
+							Last updated: {moment(this.props.last_updated).fromNow()}
 						</div>
 						<div >
-							<a className="CardJustification-footer-button" href={this.props.scryfall.scryfall_uri} target="_blank" rel="noopener noreferrer">
+							<a className="CardJustification-footer-button" href={this.props.scryfall_uri} target="_blank" rel="noopener noreferrer">
 								<button>
 									View Card
 								</button>

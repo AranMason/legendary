@@ -13,12 +13,12 @@ type CardPointsProps =
 {
 	name: string,
 	points: number,
-	scryfall: any,
 	explanation: string,
-	changes: {
-		date_created: number,
-		last_updated: number
-	},
+	image_url: string,
+	scryfall_uri: string
+	date_created: number,
+	last_updated: number,
+
 	decklist: Array<any>
 }
 

@@ -19,9 +19,11 @@ type State = {
 type Card = {
 	name: string,
 	points: number,
-	scryfall: any,
+	image_url: string,
+	scryfall_uri: string,
 	explanation: string,
-	changes: any
+	date_created: number,
+	last_updated: number
 };
 
 class DeckEvaluator extends React.Component<Props, State> {
