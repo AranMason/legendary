@@ -1,0 +1,34 @@
+.PointsList{
+	flex-direction: row;
+	display: flex;
+}
+
+.PointsList > div {
+	padding: 5px;
+}
+
+.PointsList-list {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.PointsList-content {
+	flex: 2;
+	display: flex;
+	margin-left: 1em;
+	flex-direction: column;
+
+}
+
+@media only screen and (max-width: 1500px) {
+	.PointsList-content {
+		flex: 1;
+	}
+  }
+
+  @media only screen and (max-width: 800px) {
+	.PointsList{
+		flex-direction: column-reverse;
+	}
+  }

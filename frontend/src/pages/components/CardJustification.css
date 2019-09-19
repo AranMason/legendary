@@ -1,0 +1,40 @@
+.CardJustification {
+	display: flex;
+	flex-direction: row;
+}
+
+.CardJustification-card-container {
+	width: 30%;
+}
+.CardJustification-card-image {
+	width: 100%;
+}
+
+.CardJustification-content{
+	flex: 1;
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+}
+.CardJustification-exaplanation {
+	flex: 1;
+}
+.CardJustification-footer {
+	font-size: 0.8em;
+	flex-direction: row;
+	display: flex;
+	margin-top: 1em;
+	align-content: center;
+	justify-content: center;
+}
+
+.CardJustification-footer-update {
+	flex: 1;
+	padding-right: 1em;
+	display: inline-block;
+	padding-top: 0.5em;
+}
+
+.CardJustification-footer-cardlink {
+	display: inline-block;
+}

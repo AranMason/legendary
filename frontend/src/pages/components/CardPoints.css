@@ -1,0 +1,53 @@
+.CardPoints {
+	display: flex;
+	padding-top: 5px;
+	flex-direction: column;
+
+}
+
+.CardPoints-title {
+	flex-direction: row;
+	display: flex;
+	flex: 1;
+	border-width: 0px 0px 2px 0px;
+	/* border-style: solid; */
+	/* background-color: #FAA613; */
+	padding: 0.5em;
+	border-radius: 0.2em 0.2em 0px 0px;
+	transition: background-color 0.5s;
+	font-family: 'Vollkorn SC', serif;
+}
+
+/* .CardPoints-selected {
+	background-color: #C5D86D;
+} */
+
+.CardPoints-expanded {
+	border-style: solid;
+	border-width: 0px 2px 2px 2px;
+	padding: 0.5em;
+	border-radius: 0px 0px 0.2em 0.2em;
+}
+
+.CardPoints-name {
+	flex: 1;
+	display: flex;
+}
+
+.CardPoints-points {
+	display: flex;
+	margin-right: 1em;
+}
+
+.CardPoints-expand {
+	display: flex;
+	margin-left: 5px;
+	max-height: 100%;
+	width: 1.5em;
+	cursor: pointer;
+}
+
+.CardPoints-expand > img {
+	height: auto;
+	width: 100%;
+}

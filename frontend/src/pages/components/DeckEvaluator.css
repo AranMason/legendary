@@ -1,0 +1,22 @@
+.DeckEvaluator {
+	display: flex;
+	flex-direction: column;
+}
+
+.DeckEvaluator-text {
+	margin: 1em;
+	flex: 1;
+	min-height: 50vh;
+	resize: none;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+.DeckEvaluator-footer {
+	padding-left: 2em;
+	flex: 1;
+}
+
+.DeckEvaluator-footer > button {
+	font-size: 1.5em;
+}
