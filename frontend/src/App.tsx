@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import PointsListPage from './pages/points/PointsList';
+import EditorPage from './pages/editor/EditorPage';
 
 const App: React.FC = () => {
 	return (
@@ -16,16 +17,19 @@ const App: React.FC = () => {
 
       </header>
 			<section className="App-body">
+				<Switch>
+					<Route path="/edit/:card" component={EditorPage} />
 					<Route path="/" component={PointsListPage} />
-					<Route path="/points" exact component={PointsListPage} />
+				</Switch>
+
 
 			</section>
-
-		</div>
-		<footer className="App-footer">
+			<footer className="App-footer">
 			Created by Aran Mason.
 			<div>This site uses <a href="https://fontawesome.com/license">Font Awesome Icons</a></div>
 		</footer>
+		</div>
+
 		</Router>
 	);
 }

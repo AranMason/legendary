@@ -1,0 +1,14 @@
+.EditorPage {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.EditorPage-explanation {
+
+	resize: vertical;
+	min-height: 50vh;
+	flex: 1;
+	margin: 0.5em;
+}
