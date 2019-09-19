@@ -5,8 +5,6 @@ var knex = require('../database/knex').knex;
 
 function valiadateCard (req, res, next){
 
-	console.log("Validating: ", req.body)
-
 	if(req.body.name &&
 		req.body.points &&
 		req.body.scryfall_url &&
@@ -24,9 +22,7 @@ function valiadateCard (req, res, next){
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  knex('points').select().then(db_res => {
-	  console.log(db_res);
-
+  knex('points').select().orderBy('name', 'asc').then(db_res => {
 	  res.status(200).json(db_res);
   })
 });
@@ -39,7 +35,6 @@ router.post('/update', (req, res, next) => {
 		...req.body,
 		updated_at: knex.fn.now()
 	}).then(arg => {
-		console.log(`Updated: ${req.body.name}`, req.body)
 
 		res.status(200).json({
 			status: 200,
@@ -47,9 +42,11 @@ router.post('/update', (req, res, next) => {
 		})
 
 	}).catch(err => {
-		console.log(err);
+		res.status(500).json({
+			status: 500,
+			message: err.message
+		})
 	})
-
 })
 
 router.post('/', valiadateCard, (req, res, next) => {
@@ -59,7 +56,6 @@ router.post('/', valiadateCard, (req, res, next) => {
 			message: `Succesfully added ${req.body.name}`
 		})
 	}).catch(err => {
-		console.error(err);
 		res.status(500).json({
 			status: 500,
 			message: err.message
