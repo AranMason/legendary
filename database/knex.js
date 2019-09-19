@@ -20,10 +20,6 @@ module.exports = {
 					table.timestamps(true, true);
 				}).then()
 			}
-			else {
-				// console.log('Table')
-			}
-
 		})
 
 	},

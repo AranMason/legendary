@@ -63,15 +63,10 @@ class DeckEvaluator extends React.Component<Props, State> {
 		const regex = /^[0-9]+[xX]{0,1}\s*(?<card>[a-zA-Z',/\s]+[a-zA-Z])\s*/i
 
 		const entries = this.state.decklist.split('\n');
-
-		console.log(entries);
-
 		let cards: Array<Card> = [];
 
 		entries.forEach(entry => {
 				const result = entry.match(regex);
-
-				console.log(result);
 
 				if(result && result.groups && result.groups.card){
 
@@ -84,9 +79,6 @@ class DeckEvaluator extends React.Component<Props, State> {
 					}
 				}
 		})
-
-		console.log(cards);
-
 		this.props.setDecklistPoints(cards);
 	}
 

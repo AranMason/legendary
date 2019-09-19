@@ -33,7 +33,6 @@ class PointsListPage extends React.Component<Props, State> {
 	}
 
 	componentDidMount(){
-		console.log("Did Mount")
 		axios.get('http://localhost:3001/points').then(res => {
 			this.setState({
 				points: res.data
