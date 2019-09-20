@@ -1,7 +1,6 @@
 import React from 'react';
 import {Card} from '../../models';
 
-import axios from 'axios';
 import { Link, Redirect } from 'react-router-dom';
 
 import { getUser } from '../../actions/loginActions';
