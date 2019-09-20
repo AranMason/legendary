@@ -24,7 +24,7 @@ class App extends React.Component<Props> {
 		axios.get('http://localhost:3001/points').then(res => {
 			this.props.loadPoints(res.data);
 		}).catch(err => {
-			console.log(err);
+			console.error(err);
 		})
 	}
 	render(){

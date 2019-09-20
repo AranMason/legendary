@@ -18,7 +18,7 @@ function hashPassword(password){
 		try {
 			var salt = bcrypt.genSaltSync(saltRounds);
 			var hash = bcrypt.hashSync(password, salt);
-			console.log(hash);
+
 			resolve(hash);
 		} catch (err) {
 			reject(err);
@@ -52,15 +52,11 @@ function validateCredentials(req, res, next){
 router.post('/login', validateCredentials, (req, res, next) => {
 	const password = req.body.password;
 
-	console.log(req.body);
-
 	knex('users').select('*').where({
 		username: req.body.username
 	}).orWhere({
 		email: req.body.username
 	}).then(response => {
-
-		console.log("Found: ", response);
 
 		const user = response[0];
 

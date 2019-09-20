@@ -51,8 +51,6 @@ router.post('/update', (req, res, next) => {
 
 router.get('/:card', (req, res, next) => {
 	knex('points').select().whereRaw(`LOWER(name)='${req.params.card.toLowerCase()}'`).limit(1).then(db_res => {
-		console.log(db_res);
-
 		res.status(200).json(db_res[0]);
 	}).catch(err => {
 		res.send(err);
