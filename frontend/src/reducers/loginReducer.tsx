@@ -1,4 +1,4 @@
-import { GetUser, ClearUser, RetrievingUser } from '../actions/loginActions';
+import { LoginUser, ClearUser, RetrievingUser } from '../actions/loginActions';
 
 const defaultState = {
 	user: null,
@@ -10,7 +10,7 @@ export default (state = defaultState, action: any) => {
 	console.log(action);
 
 	switch(action.type){
-		case GetUser: {
+		case LoginUser: {
 			return {
 				...state,
 				user: action.user,

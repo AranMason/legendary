@@ -69,10 +69,11 @@ router.post('/login', validateCredentials, (req, res, next) => {
 				created_at: user.created_at
 			}
 
-			res.status(200).json({
-				status: 200,
-				message: "Successfully logged in"
-			})
+			req.cookies;
+
+			console.log(req.session, req.cookies);
+
+			res.status(200).json(req.session.user);
 		}
 		else {
 			res.status(500).json({
@@ -136,6 +137,9 @@ router.post('/create', validateCredentials, (req, res, next) => {
 })
 
 router.get('/', (req, res, next) => {
+
+	console.log(req.session);
+
 	if(req.session.user){
 		res.status(200).json(
 			req.session.user
@@ -143,7 +147,7 @@ router.get('/', (req, res, next) => {
 	}
 	else (
 		res.status(400).send({
-			status: 500,
+			status: 400,
 			message: "Not logged in"
 		})
 	)

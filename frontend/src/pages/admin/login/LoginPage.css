@@ -1,0 +1,22 @@
+.LoginPage {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.LoginPage-form-row {
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+}
+
+.LoginPage-form-row > h3 {
+	flex: 1;
+	display: flex;
+}
+
+.LoginPage-form-row > input {
+	flex: 4;
+	display: flex;
+	font-size: 1em;
+}
