@@ -3,13 +3,13 @@ import './DeckEvaluator.css'
 
 import { connect } from 'react-redux';
 
-import { setDecklistPoints } from '../../actions/decklistActions'
+import { setDecklist } from '../../actions/decklistActions'
 
 import { Card } from '../../models';
 
 type Props = {
 	cards: Array<Card>,
-	setDecklistPoints: any
+	setDecklist: any
 };
 
 type State = {
@@ -55,7 +55,7 @@ class DeckEvaluator extends React.Component<Props, State> {
 		e.preventDefault();
 
 		if(this.state.decklist.trim().length === 0){
-			this.props.setDecklistPoints([]);
+			this.props.setDecklist([]);
 		}
 
 		scrollTo("PointsList-list");
@@ -79,7 +79,7 @@ class DeckEvaluator extends React.Component<Props, State> {
 					}
 				}
 		})
-		this.props.setDecklistPoints(cards);
+		this.props.setDecklist(cards);
 	}
 
 	render() {
@@ -103,7 +103,7 @@ class DeckEvaluator extends React.Component<Props, State> {
 
 const mapDispatchToProps = (dispatch: any) => {
 	return {
-		setDecklistPoints: (decklist: Array<Card>) => dispatch(setDecklistPoints(decklist))
+		setDecklist: (decklist: Array<Card>) => dispatch(setDecklist(decklist))
 	}
 }
 

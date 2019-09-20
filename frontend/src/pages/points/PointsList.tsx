@@ -11,13 +11,12 @@ import { Card } from '../../models';
 import { connect } from 'react-redux';
 
 type Props = {
-	decklist: Array<{
-		points: number
-	}>
+	decklist: Array<Card>,
+	points: Array<Card>
 }
 
 type State = {
-	points: Array<Card>
+	// points: Array<Card>
 }
 
 class PointsListPage extends React.Component<Props, State> {
@@ -30,16 +29,6 @@ class PointsListPage extends React.Component<Props, State> {
 		}
 
 		this.renderTotalPoints = this.renderTotalPoints.bind(this);
-	}
-
-	componentDidMount(){
-		axios.get('http://localhost:3001/points').then(res => {
-			this.setState({
-				points: res.data
-			})
-		}).catch(err => {
-			console.log(err);
-		})
 	}
 
 	renderTotalPoints() {
@@ -74,7 +63,7 @@ class PointsListPage extends React.Component<Props, State> {
 					<h2>Point List</h2>
 					{this.renderTotalPoints()}
 					{
-						this.state.points.map(card => {
+						this.props.points.map(card => {
 							return <CardPoints card={card} key={card.name} />
 						})
 					}
@@ -93,7 +82,7 @@ class PointsListPage extends React.Component<Props, State> {
 					</section>
 
 					<section>
-						<DeckEvaluator cards={this.state.points} />
+						<DeckEvaluator cards={this.props.decklist} />
 					</section>
 
 					<section>
@@ -170,7 +159,8 @@ class PointsListPage extends React.Component<Props, State> {
 
 const mapStateToProps = (state: any) => {
 	return {
-		decklist: state.deck.decklist
+		decklist: state.deck.decklist,
+		points: state.deck.points
 	}
 }
 

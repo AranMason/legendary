@@ -60,7 +60,7 @@ class EditorPageLoader extends React.Component<Props, State>{
 		}).catch((err: any) => {
 			console.error(err);
 			this.setState({
-				redirect: '/'
+				redirect: '/admin'
 			})
 		})
 	}
@@ -72,7 +72,7 @@ class EditorPageLoader extends React.Component<Props, State>{
 			explanation: this.state.explanation
 		}).then(() => {
 			this.setState({
-				redirect: '/'
+				redirect: '/admin'
 			})
 		})
 	}

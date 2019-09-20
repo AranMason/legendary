@@ -1,7 +1,8 @@
-import { DecklistCards } from '../actions/decklistActions';
+import { DecklistCards , LoadPoints } from '../actions/decklistActions';
 
 const defaultState = {
-	decklist: []
+	decklist: [],
+	points: []
 }
 
 export default (state = defaultState, action: {
@@ -14,6 +15,11 @@ export default (state = defaultState, action: {
 			return {
 				...state,
 				decklist: action.payload
+			}
+		case LoadPoints:
+			return {
+				...state,
+				points: action.payload
 			}
 		default: {
 			return state
