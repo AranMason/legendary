@@ -4,8 +4,6 @@ import './PointsList.css';
 import CardPoints from '../components/CardPoints';
 import DeckEvaluator from '../components/DeckEvaluator';
 
-import axios from 'axios';
-
 import { Card } from '../../models';
 
 import { connect } from 'react-redux';
