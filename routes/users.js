@@ -135,4 +135,18 @@ router.post('/create', validateCredentials, (req, res, next) => {
 	})
 })
 
+router.get('/', (req, res, next) => {
+	if(req.session.user){
+		res.status(200).json(
+			req.session.user
+		)
+	}
+	else (
+		res.status(400).send({
+			status: 500,
+			message: "Not logged in"
+		})
+	)
+})
+
 module.exports = router;

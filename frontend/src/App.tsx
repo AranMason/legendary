@@ -11,21 +11,27 @@ import AdminPage from './pages/admin/AdminPage';
 
 import { connect } from 'react-redux';
 import { loadPoints } from './actions/decklistActions'
+import { getUser } from './actions/loginActions'
 import { Card } from './models';
 
 
 type Props = {
-	loadPoints: any
+	loadPoints: any,
+	getUser: any
 }
 
 class App extends React.Component<Props> {
 
 	componentDidMount(){
-		axios.get('http://localhost:3001/points').then(res => {
+		axios.get('http://localhost:3001/points').then((res: {
+			data: Array<Card>
+		}) => {
 			this.props.loadPoints(res.data);
 		}).catch(err => {
 			console.error(err);
 		})
+
+		this.props.getUser();
 	}
 	render(){
 	return (
@@ -60,7 +66,8 @@ class App extends React.Component<Props> {
 
 const mapDispatchToProps = (dispatch: any) => {
 	return {
-		loadPoints: (decklist: Array<Card>) => dispatch(loadPoints(decklist))
+		loadPoints: (decklist: Array<Card>) => dispatch(loadPoints(decklist)),
+		getUser: () => dispatch(getUser())
 	}
 }
 

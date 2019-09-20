@@ -4,10 +4,15 @@ import {Card} from '../../models';
 import axios from 'axios';
 import { Link, Redirect } from 'react-router-dom';
 
+import { getUser } from '../../actions/loginActions';
+
 import { connect } from 'react-redux';
 
 type Props = {
-	cards: Array<Card>
+	cards: Array<Card>,
+	getUser: any,
+	user: any
+	isLoading: boolean
 }
 
 type State = {
@@ -28,27 +33,18 @@ class AdminPage extends React.Component<Props, State> {
 	}
 
 	componentDidMount(){
-		axios.get('http://localhost/users/status').then(res => {
-			this.setState({
-				isLoading: false
-			})
-		}).catch(err => {
-			console.error(err);
-			this.setState({
-				redirect: "/"
-			})
-		})
+		this.props.getUser();
 	}
 
 	render(){
 
-		if(this.state.redirect){
+		if(!this.props.isLoading && !this.props.user){
 			return (
-				<Redirect to={this.state.redirect} />
+				<Redirect to="/" />
 			)
 		}
 
-		if(this.state.isLoading){
+		if(this.props.isLoading){
 			return (
 				<div>
 					Loading
@@ -56,8 +52,11 @@ class AdminPage extends React.Component<Props, State> {
 			)
 		}
 
+		console.log(this.props);
+
 		return (
 			<div>
+				{/* {this.props.user.username} */}
 				<ul>
 					{this.state.points.map(card => {
 						return (
@@ -76,8 +75,16 @@ class AdminPage extends React.Component<Props, State> {
 
 const mapStateToProps = (state: any) => {
 	return {
-		cards: state.deck.decklist
+		cards: state.deck.decklist,
+		user: state.login.user,
+		isLoading: state.login.retrievingUser
 	}
 }
 
-export default connect(mapStateToProps)(AdminPage)
+const mapDispatchToProps = (dispatch: any) => {
+	return {
+		getUser: () => dispatch(getUser())
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdminPage)
